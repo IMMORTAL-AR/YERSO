@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv{
+    background-color:#323030; 
+    height: 7vh;
+}
+
+.top{
+    font-size: 25px; 
+    font-weight: bold;
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.div3{
+    margin-top: 22px;
+}
+
+.div3 button{
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.placeorder-btn{
+    background-color:#323030;
+    border: 2px solid aqua;
+    margin-right: 8px;
+    border-radius: 20px;
+    float: right;
+}
+
+.placeorder-btn:hover{
+    background-color: aqua;
+    color: #323030;
+    border: 2px solid #323030;
+    box-shadow: 0 0 10px 5px #323030;
+}
+
+.proceed-btn{
+    height: 30px;
+    width: 80px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.subdiv1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.subdiv2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.subdiv11{
+    text-align: center;
+    width:450px;
+    padding-top: 50px;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 15px;
+}
+
+.subdiv12{
+    padding-top: 50px;
+    padding-left: 200px;
+    width: fit-content;
+    padding: 20px;
+}
+
+.subdiv21{
+    text-align: center;
+    width:450px;
+    padding-top: 50px;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 15px;
+}
+
+.subdiv22{
+    padding-top: 50px;
+    padding-left: 200px;
+    width: fit-content;
+    padding: 20px;
+}
+
+.name{
+    font-weight: bolder;
+    font-size: larger;
+    padding-right: 123px;
+    font-family: arial;
+    color: #323030;
+}
+
+.phoneno{
+    font-weight: bolder;
+    font-size: larger;
+    padding-right: 85px;
+    font-family: arial;
+    color: #323030;
+}
+
+.address{
+    display: inline-block;
+    float: left;
+    text-align: right;
+    font-weight: bolder;
+    font-size: larger;
+    padding-right: 100px;
+    font-family: arial;
+    color: #323030;
+}
+
+#address{
+    height: 100px;
+    width: 300px;
+}
+
+.pin{
+    font-weight: bolder;
+    font-size: larger;
+    padding-right: 90px;
+    font-family: arial;
+    color: #323030;
+}
+
+.input{
+    border-width: 2px;
+    border-color: black;
+    box-shadow: none;
+    outline: none;
+    color: solid;
+    height:30px;
+    width:300px;
+}
+
+.line{
+    width: 1050px;
+    float: right;
+    height: 2px;
+    background-color: #323030;
+}
+
+.radio{
+    font-weight: bolder;
+    font-size:x-large;
+    font-family: arial;
+    color: #323030;
+}
+
+.username{
+    font-weight: bolder;
+    font-size: larger;
+    padding-right: 20px;
+    font-family: arial;
+    color: #323030;
+}
+
+.cardno{
+    font-weight: bolder;
+    font-size: larger;
+    padding-right: 40px;
+    font-family: arial;
+    color: #323030;
+}
+
+.cvc{
+    font-weight: bolder;
+    font-size: larger;
+    padding-right: 75px;
+    font-family: arial;
+    color: #323030;
+}
+
+.hidden{
+    display:none;
+}
+
+.acc{
+    height: 200px;
+    width: 200px;
+}
+
+.pay{
+    height: 200px;
+    width: 200px;
+}
+
+.left{
+    color:#323030;
+    font-family: arial;
+}
+
+.fa-solid {
+    color: black;
+}

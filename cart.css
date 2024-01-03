@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv{
+    background-color:#323030; 
+    height: 7vh;
+}
+
+.top{
+    font-size: 25px; 
+    font-weight: bold;
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.div3 button{
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.placeorder-btn{
+    background-color:#323030;
+    border: 2px solid aqua;
+    margin-right: 8px;
+    border-radius: 20px;
+    float: right;
+}
+
+.placeorder-btn:hover{
+    background-color: aqua;
+    color: #323030;
+    border: 2px solid #323030;
+    box-shadow: 0 0 10px 5px #323030;
+}
+
+.response{
+    font-size: larger;
+    font-family: arial;
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Asserts/logo.png" type="image/icon type">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="checkoutpage.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="div1">
+            <p class="top">Checkout Page</p>
+        </div><br><br><br>
+        <div class="div2">
+            <div class="subdiv1">
+                <div class="subdiv11">
+                    <img class="acc" src="./Asserts/account.svg">
+                    <p class="left">Personal Details</p>
+                </div>
+                <div class="subdiv12">    
+                    <label for="name" class="name" onblur="validateName()">Name:</label>
+		            <input type="text" id="name" class="input" name="name" placeholder="Your name.." required><br><br><br>
+                    <label for="phoneno" class="phoneno" onkeyup="validatePhoneNumber">Phone No:</label>
+		            <input type="tel" id="phoneno" class="input" name="phoneno" placeholder="Your phone.." required pattern="[0-9]{10}" minlength="10" maxlength="10"><br><br><br>
+                    <label for="address" class="address" onkeyup="validateAddress()">Address:</label>
+		            <textarea id="address" class="input" name="address" placeholder="Your address.." required></textarea><br><br><br>
+                    <label for="pin" class="pin" onkeyup="validatePinCode()">Pin Code:</label>
+                    <input type="tel" id="pin" class="input" name="pin" placeholder="Your pincode.." required pattern="[0-9]{6}" minlength="6" maxlength="6"><br><br><br>
+                </div> 
+            </div>
+            <hr class="line"><br>
+            <div class="subdiv2">
+                <div class="subdiv21">
+                    <img class="pay" src="./Asserts/pay.svg">
+                    <p class="left">Payment Details</p>
+                </div>
+                <div class="subdiv22">
+                    <input type="radio" id="netbanking" name="payment_method" value="NetBanking">
+                    <label for="netbanking" class="radio">Net Banking  <i class="fa-solid fa-building-columns"></i></label><br><br>
+                    <div id="netbankingDetails" class="hidden"><br>
+                        <label for="netbankingUsername" class="username">Username:</label>
+                        <input type="text" id="netbankingUsername" class="input" name="netbankingUsername" placeholder="Your net banking username.." required>
+                        <br><br><br>
+                        <label for="netbankingcardno" class="cardno">Card No:</label>
+                        <input type="text" id="netbankingcardno" class="input" name="netbankingcardno" pattern="[0-9]{16}" minlength="16" maxlength="16" placeholder="Your net banking card number.." required>
+                        <br><br><br>
+                        <label for="netbankingcvc" class="cvc">CVC:</label>
+                        <input type="text" id="netbankingcvc" class="input" name="netbankingcvc" pattern="[0-9]{4}" minlength="4" maxlength="4" placeholder="Your net banking cvc.." required>
+                        <br><br><br>
+                        <button type="button" class="proceed-btn" onclick="proceedWithNetBanking()">Proceed</button>
+                    </div><br><br><br>
+                    
+                    <input type="radio" id="upi" name="payment_method" value="UPI">
+                    <label for="upi" class="radio">UPI  <i class="fa-solid fa-money-bill-transfer"></i></label><br><br>
+                    <div id="upiDetails" class="hidden"><br>
+                        <label for="upiId" class="radio" onkeyup="validateUpiId()">UPI ID:</label>
+                        <input type="text" id="upiId" class="input" name="upiId" placeholder="Your UPI ID.." required>
+                        <button type="button" class="proceed-btn" onclick="proceedWithUPI()">Proceed</button>
+                    </div><br><br><br>
+                    
+                    <input type="radio" id="cod" name="payment_method" value="CashonDelivery">
+                    <label for="cod" class="radio">Cash on Delivery  <i class="fa-solid fa-money-bill"></i></label><br><br>
+                </div>    
+            </div>
+            <hr class="line"><br>
+        </div>
+
+        <div class="div3">
+            <button type = "button" class = "placeorder-btn" onclick="validateAndPlaceOrder()">Place Order</button>
+        </div>
+    </div>
+</body>
+<script src="checkoutpage.js"></script>
+</html>

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv{
+    background-color:#323030; 
+    height: 7vh;
+}
+
+.top{
+    font-size: 25px; 
+    font-weight: bold;
+    color:white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.response{
+    font-size: larger;
+    font-family: arial;
+    text-align: center;
+}

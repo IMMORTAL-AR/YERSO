@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Asserts/logo.png" type="image/icon type">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="cart.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="div1">
+            <p class="top">Shopping Cart</p>
+        </div><br><br><br>
+        <div class="div2">
+            <p class="response">No items added to cart</p>
+        </div>
+        <div class="div3">
+            <button type="button" class="placeorder-btn" onclick="window.location.href = 'checkoutpage.html';">Buy Now</button>
+        </div>
+
+        <div class="product-container" style="display: none;">
+            <img src="" alt="Product Image" class="product-image">
+            <p class="product-price"></p>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button type="button" class="remove-btn" onclick="removeFromCart(this)">Remove</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
